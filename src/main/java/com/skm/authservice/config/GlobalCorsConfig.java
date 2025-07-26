@@ -14,7 +14,7 @@ public class GlobalCorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all paths
-                        .allowedOrigins("https://school-management-ui-4w4n.onrender.com") // Change to your frontend URL
+                        .allowedOrigins("https://school-management-ui-4w4n.onrender.com","http://localhost:4200") // Change to your frontend URL
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
