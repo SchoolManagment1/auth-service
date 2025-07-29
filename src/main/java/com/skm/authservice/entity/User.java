@@ -46,7 +46,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String phone;
     
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String address;
 
     @Column(nullable = false)
@@ -57,7 +57,7 @@ public class User {
     private Role role;
     
     @Builder.Default
-    private boolean status=true;
+    private boolean status=false;
     
     @CreationTimestamp
     private LocalDateTime createdAt;
